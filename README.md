@@ -1,6 +1,6 @@
-# untitled
+# Belajar Flutter
 
-A new Flutter project.
+Latihan saya untuk belajar flutter
 
 ## Getting Started
 
