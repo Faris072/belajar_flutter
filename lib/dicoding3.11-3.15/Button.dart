@@ -8,7 +8,7 @@ void main(){
 }
 
 class elevatedbutton extends StatelessWidget{
-  List<String> data = ['List 1','List 2','List 4'];
+  final List<String> dataList = ['List 1','List 2','List 4'];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -75,10 +75,23 @@ class elevatedbutton extends StatelessWidget{
               ),
             ),
             Container(
-              child: DropdownButton(
-                items: a,
+              child: ElevatedButton.icon(
+                onPressed: (){},
+                icon: Icon(Icons.account_box),
+                label: Text("Account"),
+                style: ElevatedButton.styleFrom(//style bisa menggunakan ElevatedButton.styleFrom()
+                  primary: Colors.red,
+                ),
               ),
-            )
+            ),
+            // Container(
+            //   child: DropdownButton<String>(
+            //     items: dataList.map( (e) => DropdownMenuItem<String>(
+            //       child: Text(e),
+            //     )).toList(),
+            //     onChanged: (value){print(value);},
+            //   ),
+            // )
           ],
         ),
       ),
