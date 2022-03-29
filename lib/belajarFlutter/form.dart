@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     title: "Belajar Form Flutter",
+    theme: ThemeData(
+      primarySwatch: Colors.blue,
+    ),
     home: BelajarForm(),
   ));
 }
